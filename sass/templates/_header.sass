@@ -1,0 +1,55 @@
+.header
+  position: fixed
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #01090D
+  &__info
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 95px
+
+.menu
+  &__logo
+    margin-left: 75px
+  &__info
+    display: flex
+    justify-content: center
+    align-items: center
+  &__link:not(:last-child)
+    margin-right: 50px
+  &__link:last-child
+    margin-right: 120px
+  &__link
+    font-family: 'Exo 2', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    display: flex
+    align-items: center
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+
+.basket
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__price, &__money
+    color: #fff
+    font-family: 'Exo 2', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    display: flex
+    align-items: center
+    text-align: center
+    text-transform: uppercase
+  &__price
+    margin-right: 10px
+  &__image
+    margin-right: 40px

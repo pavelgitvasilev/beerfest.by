@@ -28,6 +28,16 @@ button {
   max-width: 1290px;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 section {
   overflow: hidden;
 }
@@ -383,5 +393,175 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.home__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background: url("../img/slider/slider1.png") no-repeat;
+  background-size: cover;
+  background-position: 0 80px;
+  padding-top: 80px;
+}
+
+.home__title {
+  max-width: 850px;
+  margin: auto;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFAFA;
+}
+
+.home__subtitle {
+  max-width: 850px;
+  margin: auto;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  text-align: center;
+  color: #FCFAFA;
+}
+
+.home__button {
+  margin: auto;
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #F29F05;
+  border: none;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 158.49%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFAFA;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #01090D;
+}
+
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 95px;
+}
+
+.menu__logo {
+  margin-left: 75px;
+}
+
+.menu__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu__link:last-child {
+  margin-right: 120px;
+}
+
+.menu__link {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket__price, .basket__money {
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.basket__price {
+  margin-right: 10px;
+}
+
+.basket__image {
+  margin-right: 40px;
 }
 /*# sourceMappingURL=styles.css.map */
