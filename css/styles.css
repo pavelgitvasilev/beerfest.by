@@ -20,10 +20,6 @@ input {
   outline: none;
 }
 
-button {
-  outline: none;
-}
-
 .container {
   max-width: 1290px;
 }
@@ -454,8 +450,8 @@ template {
 }
 
 .home__button {
-  width: 240px;
-  height: 50px;
+  min-width: 240px;
+  min-height: 50px;
   border-radius: 5px;
   background-color: #F29F05;
   border: none;
@@ -700,6 +696,38 @@ template {
   margin-bottom: 40px;
 }
 
+.categories__mobile {
+  display: none;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.option {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 141%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #01090D;
+  padding-left: 124px;
+}
+
+.form-control--categories {
+  height: 50px;
+  padding-left: 24px;
+  border: 1px solid #D2D9D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background: url("../img/menu/select.svg") no-repeat;
+  background-position: 95% 50%;
+}
+
 .categories__link {
   width: 300px;
   height: 70px;
@@ -787,8 +815,8 @@ template {
 }
 
 .orders__btn {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border: 1px solid #D2D9D7;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -801,12 +829,12 @@ template {
 }
 
 .orders__click {
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .order {
-  width: 140px;
-  height: 40px;
+  min-width: 140px;
+  min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1218,13 +1246,23 @@ textarea::placeholder, input::placeholder {
   .social__text {
     display: none;
   }
-}
-
-.social {
-  margin-bottom: 15px;
-}
-
-.social__image--google {
-  margin-right: 0;
+  .social {
+    margin-bottom: 15px;
+  }
+  .social__image--google {
+    margin-right: 0;
+  }
+  .categories {
+    display: none;
+  }
+  .categories__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__title {
+    padding-top: 30px;
+    margin-bottom: 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
