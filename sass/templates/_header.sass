@@ -1,4 +1,5 @@
 .header
+  z-index: 10
   position: fixed
   width: 100%
   display: flex
@@ -10,6 +11,10 @@
     justify-content: center
     align-items: center
     margin-right: 95px
+  &__mobile
+    display: none
+    height: 80px
+    width: 100%
 
 .menu
   &__logo
@@ -53,3 +58,39 @@
     margin-right: 10px
   &__image
     margin-right: 40px
+    cursor: pointer
+
+.menu  
+  &__bar
+    position: relative
+    cursor: pointer
+    span::after,  
+    span::before
+      position: absolute
+      width: 24px
+      height: 3px
+      background-color: #fff
+      transition: 0.2s
+      content: ''
+    span::after
+      transform: translateY(-7px)
+    span::before
+      transform: translateY(7px)
+
+.menu
+  &__btn
+    margin-left: 20px
+    display: inline-block
+    width: 24px
+    height: 3px
+    background-color: #fff
+    &--active
+      height: 0
+    &--active
+      span:before
+        transform: rotate(45deg)
+      span:after
+        transform: rotate(-45deg)
+  &__basket
+    &--mobile
+      margin-right: 20px

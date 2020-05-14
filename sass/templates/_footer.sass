@@ -1,0 +1,43 @@
+.footer
+  height: 80px
+  width: 100%
+  background-color: #01090D
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__logo
+    padding-left: 75px
+  &__link:not(:last-child)
+    margin-right: 50px
+  &__link
+    font-family: 'Exo 2', sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 141%
+    color: #FCFAFA
+  &__social
+    margin-right: 75px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.social
+  &__image
+    width: 30px
+    &--instagram, &--instagram-active
+      margin-right: 30px
+    &--google, &--google-active
+      margin-right: 50px
+    &--instagram-active, &--google-active
+      display: none
+  &__text
+    font-family: 'Exo 2', sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 141%
+    display: flex
+    align-items: center
+    text-align: right
+    color: #FCFAFA
