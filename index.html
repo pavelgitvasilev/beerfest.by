@@ -7,8 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>BeerFest</title>
@@ -47,6 +45,28 @@
     </div>
   </div>
   <!-- /.header header__mobile -->
+
+  <!-- меню для мобильных экранов -->
+
+    <div class="window__mobile">
+      <div class="window__mobile--block">
+        <div class="window__mobile--logo">
+          <img src="img/mobilemenu/mobilelogo.png" alt="mobilelogo" class="window__mobile--image">
+        </div>
+        <div class="window__mobile--menu">
+          <a href="#" class="window__mobile--link">Меню</a>
+          <a href="#" class="window__mobile--link">Акции</a>
+          <a href="#" class="window__mobile--link">O Beerfest</a>
+          <a href="#" class="window__mobile--link">Доставка и оплата</a>
+          <a href="#" class="window__mobile--link">контакты</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.window__mobile -->
+
+  <!-- меню для мобильных экранов -->
+
+  
   <main class="hero">
     <div class="hero__slider">
       <!-- Slider main container -->
@@ -195,7 +215,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="cards menu__cards">
-                  <div class="crad" data-toggle="modal" data-target="#exampleModal" >
+                  <div class="crad" data-toggle="modal" data-target="#exampleModal">
                     <img src="img/menu/fokasna.png" alt="fokasna" class="card__image">
                     <h2 class="card__title">Фокасна</h2>
                     <div class="card__price">
@@ -464,7 +484,10 @@
       </div>
     </section>
     <!-- /.feedback -->
-
+    <div class="scrolltop">
+      <img src="img/menu/scrolltop.png" alt="" class="scroll-image" id="scroll_top">
+    </div>
+    <!-- /.scrolltop -->
   </main>
   <!-- /.hero -->
 
@@ -488,19 +511,12 @@
   </footer>
 
 
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

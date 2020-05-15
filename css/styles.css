@@ -407,6 +407,7 @@ template {
 }
 
 .home__slider {
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +472,11 @@ template {
   color: #FCFAFA;
   margin: 0;
   margin-bottom: 103.5px;
+}
+
+.home__button:hover {
+  background-color: #D98E04;
+  color: #FCFAFA;
 }
 
 .swiper-pagination-bullet {
@@ -662,6 +668,73 @@ template {
 
 .menu__basket--mobile {
   margin-right: 20px;
+}
+
+.window__mobile {
+  position: fixed;
+  position: -webkit-sticky;
+  display: none;
+  width: 100%;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: 80px;
+  width: 100%;
+  z-index: 3;
+}
+
+.window__mobile--active {
+  position: fixed;
+  position: -webkit-sticky;
+  opacity: 1;
+  visibility: visible;
+}
+
+.window__mobile--block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.window__mobile--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.window__mobile--link:hover {
+  color: #F29F05;
 }
 
 .menu__title {
@@ -889,6 +962,14 @@ template {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FCFAFA;
+}
+
+.scroll-image {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  cursor: pointer;
 }
 
 .about__title {
@@ -1489,6 +1570,11 @@ textarea::placeholder, input::placeholder {
   }
   .pay {
     padding-bottom: 60px;
+  }
+  .window__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

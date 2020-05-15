@@ -1,0 +1,41 @@
+.window
+  &__mobile
+    position: fixed
+    position: -webkit-sticky
+    display: none
+    width: 100%
+    background-color: #000
+    opacity: 0
+    visibility: hidden
+    transition: 0.3s
+    top: 80px
+    width: 100%
+    z-index: 3
+    &--active
+      position: fixed
+      position: -webkit-sticky
+      opacity: 1
+      visibility: visible
+    &--block
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      margin: auto
+    &--link
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      margin-bottom: 40px
+      margin-top: 40px
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 22px
+      text-transform: uppercase
+      &:hover
+        color: #F29F05
+
+
