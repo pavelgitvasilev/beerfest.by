@@ -1031,6 +1031,7 @@ template {
 .condition__image {
   display: block;
   margin-right: 12px;
+  margin-top: 7px;
 }
 
 .condition__text {
@@ -1051,9 +1052,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .condition__info--one {
@@ -1579,6 +1580,19 @@ textarea::placeholder, input::placeholder {
   }
   .kitchen__slogan {
     display: none;
+  }
+  .delivery__form--item {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .delivery__maps--item {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .pay__title {
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
