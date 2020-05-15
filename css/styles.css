@@ -24,6 +24,11 @@ input {
   max-width: 1290px;
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -481,6 +486,18 @@ template {
   background-color: #730318;
 }
 
+.modal {
+  top: 30%;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
 .header {
   z-index: 10;
   position: fixed;
@@ -857,7 +874,7 @@ template {
 }
 
 .order__text {
-  ont-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -872,6 +889,261 @@ template {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FCFAFA;
+}
+
+.about__title {
+  padding-top: 140px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.about__subtitle {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #000000;
+}
+
+.hero__about {
+  margin-bottom: 60px;
+}
+
+.climate {
+  margin-bottom: 60px;
+}
+
+.climate__title {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.climate__subtitle {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.climate__image {
+  width: 100%;
+}
+
+.kitchen {
+  padding-bottom: 120px;
+}
+
+.kitchen__title {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.kitchen__heading {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.kitchen__description {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #000000;
+}
+
+.kitchen__slogan {
+  margin-top: 60px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+}
+
+.delivery {
+  padding-top: 80px;
+}
+
+.delivery__title {
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.delivery__link {
+  color: #F29F05;
+}
+
+.delivery__link:hover {
+  color: #D98E04;
+}
+
+.condition {
+  margin-bottom: 60px;
+}
+
+.condition__subtitle {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.condition__image {
+  display: block;
+  margin-right: 12px;
+}
+
+.condition__text {
+  display: block;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #01090D;
+}
+
+.condition__info:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.condition__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.condition__info--one {
+  margin-bottom: 5px;
+}
+
+.delivery__maps {
+  padding-bottom: 60px;
+}
+
+.delivery__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.delivery__form--title {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.delivery__pickup {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.delivery__schedulp {
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #000000;
+  margin-bottom: 120px;
+}
+
+.delivery__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form__label--delivery {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #01090D;
+  margin-bottom: 10px;
+}
+
+.form__input--delivery {
+  padding-left: 24px;
+  min-height: 50px;
+}
+
+.pay {
+  padding-bottom: 120px;
+}
+
+.pay__title {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 60px;
 }
 
 .feedback {
@@ -1176,6 +1448,47 @@ textarea::placeholder, input::placeholder {
         -ms-flex-order: 3;
             order: 3;
   }
+  .inform__title {
+    padding-top: 60px;
+    margin-bottom: 40px;
+  }
+  .inform__subtitle {
+    margin-bottom: 20px;
+  }
+  .inform__image-information {
+    margin-bottom: 40px;
+  }
+  .climate__title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .climate__subtitle {
+    margin-bottom: 20px;
+  }
+  .kitchen {
+    padding-bottom: 60px;
+  }
+  .kitchen__image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .kitchen__slogan {
+    margin: 0;
+    font-size: 30px;
+  }
+  .delivery__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .delivery__schedulp {
+    margin-bottom: 30px;
+  }
+  .delivery__maps {
+    padding-bottom: 0;
+  }
+  .pay {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1263,6 +1576,9 @@ textarea::placeholder, input::placeholder {
   .menu__title {
     padding-top: 30px;
     margin-bottom: 15px;
+  }
+  .kitchen__slogan {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -43,33 +43,38 @@
       }
   });
   //наведение на иконки футера
-  $('.social__image--instagram').hover(function () {
-      $('.social__image--instagram').css('display', 'none');
-      $('.social__image--instagram-active').css('display', 'flex');
+    $('.social__image--instagram').hover(function () {
+        $('.social__image--instagram').css('display', 'none');
+        $('.social__image--instagram-active').css('display', 'flex');
+        
+      }, function () {
+
+        $('.social__image--instagram').css('display', 'flex');
+        $('.social__image--instagram-active').css('display', 'none');
+
+      }
+    );
+    $('.social__image--google').hover(function () {
+      $('.social__image--google').css('display', 'none');
+      $('.social__image--google-active').css('display', 'flex');
       
     }, function () {
 
-      $('.social__image--instagram').css('display', 'flex');
-      $('.social__image--instagram-active').css('display', 'none');
+      $('.social__image--google').css('display', 'flex');
+      $('.social__image--google-active').css('display', 'none');
 
     }
   );
-  $('.social__image--google').hover(function () {
-    $('.social__image--google').css('display', 'none');
-    $('.social__image--google-active').css('display', 'flex');
-    
-  }, function () {
-
-    $('.social__image--google').css('display', 'flex');
-    $('.social__image--google-active').css('display', 'none');
-
-  }
-);
 
   
-
-
-
+  function showDialog(text) {
+    $('#row-content').html(text);
+    $('.modal').modal('show');
+  }
+  
+  // $('#exampleModal').click(function (e) { 
+  //   showDialog('');
+  // });
 
 
 
