@@ -1228,6 +1228,63 @@ template {
   margin-bottom: 60px;
 }
 
+.contacts {
+  padding-bottom: 120px;
+}
+
+.contacts__title {
+  padding-top: 140px;
+  margin-bottom: 60px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts__subtitle {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 35px;
+}
+
+.contacts__details {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #000000;
+}
+
+.contacts__instagram {
+  margin-right: 30px;
+}
+
 .feedback {
   height: 790px;
   background: url("../img/feedback/background.png") no-repeat;
