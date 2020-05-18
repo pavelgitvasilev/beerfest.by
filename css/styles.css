@@ -56,11 +56,13 @@ select {
 
 li {
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 ul {
   margin-left: 0;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -494,14 +496,39 @@ template {
 
 .modal {
   top: 30%;
+  left: -10%;
+}
+
+.modal-body {
+  margin: 0;
+  padding-bottom: 60px;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-left: 40px;
 }
 
 .modal-header {
   border-bottom: none;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .modal-footer {
   border-top: none;
+}
+
+.modal-content {
+  width: 972px;
+  height: 396px;
+}
+
+.close {
+  font-size: 44px;
+  color: #F29F05;
+}
+
+.card__image {
+  width: 100%;
 }
 
 .header {
@@ -521,6 +548,7 @@ template {
 }
 
 .header__info {
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,6 +870,10 @@ template {
   border: 1px solid #730318;
   border-radius: 4px;
   color: #730318;
+}
+
+.card {
+  border: none;
 }
 
 .card__orders {
