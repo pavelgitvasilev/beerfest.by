@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/header/logo.jpg" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>BeerFest</title>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header__menu">
+      <a href="index.html"><img src="img/header/logo.png" alt="logo" class="logo menu__logo"></a>
+    </div>
+    <!-- /.header__menu -->
+    <div class="header__info">
+      <nav class="menu__info">
+        <a href="#" class="menu__link">Меню</a>
+        <a href="#" class="menu__link">Акции</a>
+        <a href="#" class="menu__link">О нас</a>
+      </nav>
+        <div class="basket menu__basket">
+          <img src="img/header/basket.svg" alt="basket" class="basket__image">
+          <span class="basket__price">0.00 </span>
+          <span class="basket__money">BYN</span>
+        </div>
+    </div>
+    <!-- /.header__info -->
+  </header>
+  <!-- /.header -->
+
+  <div class="header header__mobile">
+    <div class="menu__bar">
+      <a href="#" class="menu__btn"><span></span></a>
+    </div>
+    <div class="basket menu__basket menu__basket--mobile">
+      <img src="img/header/basket.svg" alt="basket" class="basket__image">
+      <span class="basket__price">0.00 </span>
+      <span class="basket__money">BYN</span>
+    </div>
+  </div>
+  <!-- /.header header__mobile -->
+
+
+  <main class="discount">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="discount__title">Акции</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="img/discount/discountone.png" alt="" class="dicount__image discount__pickup">
+        </div>
+        <div class="col-lg-8">
+          <div class="discount__pickup">
+            <div class="discount__headline">Скидка 20% при самовывозе</div>
+            <div class="discount__subtitle discount__subtitle--one">Для всех гостей, которые сами приходят за своим заказом, действует скидка 20% на всё меню</div>
+            <button class="discount__button">Условия акции</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="img/discount/discounttwo.png" alt="" class="dicount__image discount__pickup">
+        </div>
+        <div class="col-lg-8">
+          <div class="discount__pickup">
+            <div class="discount__headline ">Скидка 15% для именинников</div>
+            <div class="discount__subtitle discount__subtitle--two">Ресторан «Бирфест» дарит именинникам скидку на весь заказ 15% неограниченное количество раз в течение 5 дней с даты рождения включительно.</div>
+            <button class="discount__button">Условия акции</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </main>
+  <!-- /.hero__discount -->
+
+
+
+
+
+
+  <section class="feedback">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="feedback__title">Напишите нам</div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="feedback__subtitle">Забронировать столик, заказать доставку, поблагодарить - мы будем рады каждому сообщению.</div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-12">
+          <form action="#" class="feedback__form">
+            <label for="form__input--name" class="form__label">Ваше имя</label>
+            <input type="text" class="form__input form__input--name" placeholder="Василий"></input>
+            <label for="form__input--tel" class="form__label">Номер телефона</label>
+            <input type="tel:+375291234567" class="form__input form__input--tel" placeholder="+375-29-123-45-67"></input>
+            <label for="form__input--message" class="form__label">Сообщение</label>
+            <textarea type="text" class="textarea__input form__input--message" placeholder="Введите имя"></textarea>
+            <button class="form__button">Отправить</button>
+            <span class="form__text">Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__link">политикой конфиденциальности</a> и <a href="#" class="form__link">пользовательским соглашением</a></span>
+          </form>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </section>
+  <!-- /.feedback -->
+
+  <footer class="footer">
+    <div class="logo footer__logo">
+      <img src="img/header/logo.png" alt="footer-logo" class="logo__image">
+    </div>
+    <div class="footer__links">
+      <a href="#" class="footer__link footer__link--one">Пользовательское соглашение</a>
+      <a href="#" class="footer__link footer__link--two">Меню</a>
+      <a href="#" class="footer__link footer__link--trhee">Акции</a>
+      <a href="#" class="footer__link footer__link--four">Доставка и оплата</a>
+    </div>
+    <div class="social footer__social">
+      <img src="img/footer/Facebook.png" alt="instagram" class="social__image social__image--instagram">
+      <img src="img/footer/Facebook_active.png" alt="instagram" class="social__image social__image--instagram-active">
+      <img src="img/footer/google.png" alt="google" class="social__image social__image--google">
+      <img src="img/footer/google_active.png" alt="google" class="social__image social__image--google-active">
+      <div class="span social__text">© 2020 Beerfest</div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -129,10 +129,52 @@
   //   e.preventDefault();
   // });
 
-    
+
+
+
+
+  //работа с карточками 
       
+  const cards = document.querySelector ('.crad');
 
-  });
+  function createCard() {
+    const card = `
+    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="cards menu__cards">
+                  <div class="crad" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/menu/fokasna.png" alt="fokasna" class="card__image">
+                    <h2 class="card__title">Фокасна</h2>
+                    <div class="card__price">
+                      <span class="card__price--actual">1,75 BYN</span>
+                      <span class="card__price--full">2,25 BYN</span>
+                    </div>
+                  </div>
+                  <div class="orders card__orders">
+                    <div class="orders__click">
+                      <button class="orders__btn"><span class="orders__btn--minus">-</span></button>
+                      <span class="orders__number">1</span>
+                      <button class="orders__btn"><span class="orders__btn--plus">+</span></button>
+                    </div>
+                    <button class="order">
+                      <img src="img/header/basket.svg" alt="basket" class="order__image">
+                      <span class="order__text">добавить</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+    `;
 
+    cards.insertAdjacentHTML('beforebegin', card );
+
+  }
   
   
+  cards();
+
+  createCard();
+
+
+});
+
+  
+

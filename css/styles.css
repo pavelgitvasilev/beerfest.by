@@ -1285,6 +1285,71 @@ template {
   margin-right: 30px;
 }
 
+.discount {
+  padding-bottom: 120px;
+}
+
+.discount__title {
+  padding-top: 140px;
+  margin-bottom: 60px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.discount__headline {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.discount__subtitle {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 141%;
+  color: #01090D;
+}
+
+.discount__subtitle--one {
+  margin-bottom: 60px;
+}
+
+.discount__subtitle--two {
+  margin-bottom: 40px;
+}
+
+.discount__button {
+  background: #730318;
+  border-radius: 5px;
+  border: none;
+  width: 220px;
+  height: 50px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 158.49%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.discount__pickup {
+  margin-bottom: 60px;
+}
+
 .feedback {
   height: 790px;
   background: url("../img/feedback/background.png") no-repeat;
@@ -1633,6 +1698,37 @@ textarea::placeholder, input::placeholder {
     display: -ms-flexbox;
     display: flex;
   }
+  .contacts {
+    padding-bottom: 60px;
+  }
+  .contacts__title {
+    padding-top: 80px;
+  }
+  .contacts__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__address, .contacts__phone, .contacts__working, .contacts__soctial {
+    width: 50%;
+  }
+  .contacts__map {
+    margin-bottom: 20px;
+  }
+  .discount {
+    padding-bottom: 30px;
+  }
+  .discount__title {
+    padding-top: 80px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1736,6 +1832,34 @@ textarea::placeholder, input::placeholder {
   }
   .pay__title {
     margin-bottom: 40px;
+  }
+  .contacts {
+    padding-bottom: 60px;
+  }
+  .contacts__title {
+    padding-top: 80px;
+  }
+  .contacts__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__address, .contacts__phone, .contacts__working, .contacts__soctial {
+    width: 100%;
+  }
+  .discount {
+    padding-bottom: 10px;
+  }
+  .discount__title {
+    padding-top: 60px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
