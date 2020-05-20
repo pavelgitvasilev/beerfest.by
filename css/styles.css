@@ -2134,7 +2134,7 @@ textarea::placeholder, input::placeholder {
     padding-top: 60px;
   }
   .modal {
-    top: 30%;
+    top: 10%;
   }
   .modal-dialog {
     margin-right: 0;
