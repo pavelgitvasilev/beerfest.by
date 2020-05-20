@@ -564,6 +564,7 @@ template {
   line-height: 22px;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 0;
 }
 
 .calculation {
@@ -678,6 +679,21 @@ template {
   color: #D98E04;
 }
 
+.card__price--actual {
+  margin-left: 20px;
+}
+
+.card__price--actualvis {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #730318;
+  margin-right: 24px;
+  margin-bottom: 30px;
+}
+
 .form-control--busket {
   margin-bottom: 30px;
 }
@@ -738,6 +754,22 @@ template {
   background-color: #730318;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.clicked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__price--actualvis {
+  display: none;
 }
 
 .header {
@@ -2150,6 +2182,38 @@ textarea::placeholder, input::placeholder {
     padding-top: 15px;
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .busket__order {
+    display: block;
+  }
+  .busket__image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .orders__click {
+    display: inline-block;
+  }
+  .card__title--busket {
+    margin-bottom: 30px;
+  }
+  .card__price--actual {
+    margin: 0;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .clicked {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card__price--actualvis {
+    display: block;
+  }
+  .card__price--actual {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
