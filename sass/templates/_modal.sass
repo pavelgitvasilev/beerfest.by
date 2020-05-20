@@ -1,25 +1,187 @@
 .modal
   top: 30%
-  left: -10%
+  // left: -10%
   &-body
     margin: 0
     padding-bottom: 60px
     padding-top: 15px
     padding-right: 30px
     padding-left: 40px
+  &-content
+    border: none
 .modal-header
   border-bottom: none 
   padding-bottom: 0
   padding-top: 0
 .modal-footer
   border-top: none 
-.modal-content
-  width: 972px
-  height: 396px
 .close
   font-size: 44px
   color: #F29F05
 
-.card
+.modal-busket
+  top: 0
+.busket
   &__image
-    width: 100%
+    width: 25%
+  &__title
+    margin-bottom: 60px
+    font-family: 'Exo 2', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 120%
+    color: #000000
+  &__order
+    display: flex
+    justify-content: space-between
+    align-items: center
+    vertical-align: middle
+.card
+  &__title
+    &--busket
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 22px
+      text-transform: uppercase
+      color: #000000
+
+.calculation
+  display: flex
+  flex-direction: column
+  &__summ, &__discount, &__total
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__summ
+    margin-bottom: 10px
+  &__discount
+    margin-bottom: 30px
+  &__total
+    margin-bottom: 30px
+
+.calc__name,
+  font-family: 'Exo 2', sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 141%
+  color: #000000
+.calc__summ
+  font-family: 'Exo 2', sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 141%
+  color: #730318
+
+.total__name
+  font-family: 'Exo 2', sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 22px
+  color: #000000
+.total__summ
+  font-family: 'Exo 2', sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 22px
+  color: #730318
+
+
+.form
+  &-control
+    &--busket
+      height: 50px
+      margin-bottom: 20px
+      padding-left: 24px
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 141%
+      color: #BEC2C3
+  &__button
+    &--busket
+      width: 100%
+  &__label
+    &--busket
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 141%
+      color: #01090D
+  &__text
+    &--busket
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 141%
+      color: #01090D
+  &__link
+    &--busket
+      color: #F29F05
+      &:hover
+        color: #D98E04
+.form-control--busket
+  margin-bottom: 30px
+
+.custom-control-label
+  font-family: 'Exo 2', sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 141%
+  color: #606161
+  margin-bottom: 20px
+
+.busket__form--title
+  font-family: 'Exo 2', sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 24px
+  line-height: 120%
+  color: #01090D
+  margin-top: 60px
+  margin-bottom: 40px
+
+.select-busket
+  margin-top: 10px
+  font-family: 'Exo 2', sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 141%
+  color: #01090D
+.form-control
+  &--busket
+    font-family: 'Exo 2', sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 141%
+    color: #D2D9D7
+  &--option
+    font-family: 'Exo 2', sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 141%
+    color: #606161
+    opacity: 0.5
+.custom-control-input:checked~.custom-control-label::before 
+    color: #fff
+    border-color: #730318
+    background-color: #730318
+    box-shadow: none
+
+
+
+
+

@@ -95,6 +95,30 @@
     }
   );
 
+  $('#menuabout').hover(function () {
+      $('.menu__links').addClass('menu__links--active');
+      
+    }, function () {
+
+    },
+    
+  );
+
+  $(document).mouseup(function(e) {
+    // var dropdown = $('.dropdown');
+    var menu_dropdown = $("#menuabout"); 
+    var container__dropdown = $("menu__links--active"); 
+    var home = $('.home__slider');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container__dropdown.is(e.target) && container__dropdown.has(e.target).length === 0 && 
+        !menu_dropdown.is(e.target) && menu_dropdown.has(e.target).length === 0 && !home.is(e.target)
+    ) 
+    {
+        $(".menu__links").removeClass("menu__links--active");
+        // $(".menu__btn").removeClass("menu__btn--active")
+    }
+});
 
 
 
@@ -104,35 +128,12 @@
 
   // new WOW().init(); 
 
-  //Smooth Scrolling Using Navigation Menu
-  // $('a[href*="#"]').on('click', function(e){
-  //   $('html,body').animate({
-  //     scrollTop: $($(this).attr('href')).offset().top - 100
-  //   },500);
-  //   e.preventDefault();
-  // });
-
-
-
-
-
-  //работа с карточками 
-      
-  // const cards = document.querySelector('.card');
-
-  // function createCard() {
-  //   var card = ``;
-  //   cards.insertAdjacentHTML('beforebegin', card);
-  //   console.log('ok');
-    
-  // }
-
-
 
   function showDialog(text) {
     $('#content').html(text);
     $('#exampleModal').modal('show');
   }
+
   
   $(".card").click(function() {
     var imgSrc = $(this).find('.card__image').attr('src');
@@ -168,12 +169,13 @@
 
 
   
-  
+  //корзина
+  $(".basket__image").click(function() {
+    
+    $('#exampleModalLong').modal();
+  });
 
-
-
-
-
+  // $('select').selectpicker();
   
 
 
